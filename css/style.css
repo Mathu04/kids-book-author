@@ -234,7 +234,14 @@
     color: #999;
     margin-bottom: 20px;
 }
-
+.book-body .meta {
+  display: flex;
+  justify-content: flex-start; /* 👈 left align */
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #777;
+}
 /* Rounded Button (important) */
 .btn-rounded {
     display: inline-block;

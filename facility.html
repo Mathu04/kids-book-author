@@ -718,6 +718,24 @@ Every event is carefully structured to deliver a complete and enriching experien
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/theme-rtl.js"></script>
+    <script>
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", function () {
+
+    const item = this.parentElement;
+    const icon = this.querySelector("span");
+
+    item.classList.toggle("active");
+
+    if (item.classList.contains("active")) {
+      icon.innerText = "+";
+    } else {
+      icon.innerText = "+";
+    }
+
+  });
+});
+</script>
 </body>
 
 </html>

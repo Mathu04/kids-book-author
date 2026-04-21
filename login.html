@@ -112,7 +112,7 @@ body {
 }
 
 .btn-main:hover {
-  background: #2563eb;
+  background: #7563ff;
 }
 
 /* DIVIDER */
@@ -188,18 +188,32 @@ body {
   <div class="tab-content">
 
     <!-- LOGIN -->
-    <div class="tab-pane fade show active" id="login">
+  <div class="tab-pane fade show active" id="login">
 
-      <input type="email" class="form-control mb-3" placeholder="Email">
+  <input type="email" class="form-control mb-3" placeholder="Email">
 
-      <div class="password-box mb-3">
-        <input type="password" class="form-control" id="loginPass" placeholder="Password">
-        <i class="fa fa-eye" onclick="togglePass('loginPass', this)"></i>
-      </div>
+  <div class="password-box mb-2">
+    <input type="password" class="form-control" id="loginPass" placeholder="Password">
+    <i class="fa fa-eye" onclick="togglePass('loginPass', this)"></i>
+  </div>
 
-      <button class="btn btn-main w-100">Login</button>
-
+  <!-- REMEMBER + FORGOT -->
+  <div class="d-flex justify-content-between align-items-center mb-3 small">
+    
+    <div class="form-check m-0">
+      <input class="form-check-input" type="checkbox" id="rememberMe">
+      <label class="form-check-label" for="rememberMe">
+        Remember me
+      </label>
     </div>
+
+    <a href="#" class="forgot-link">Forgot Password?</a>
+
+  </div>
+
+  <button class="btn btn-main w-100">Login</button>
+
+</div>
 
     <!-- SIGNUP -->
     <div class="tab-pane fade" id="signup">
