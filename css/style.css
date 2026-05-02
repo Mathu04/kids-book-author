@@ -3613,3 +3613,460 @@ html[data-theme="dark"] .navbar-toggler {
 html[data-theme="dark"] .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+/* BASE */
+.footer-section {
+    background: #fff;
+    padding: 60px 0 0;
+    border-top: 1px solid #eee;
+    color: #555;
+}
+
+/* LOGO */
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+
+/* TITLES */
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.footer-text {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* LINKS */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #7563ff;
+    padding-left: 6px;
+}
+
+/* SOCIAL */
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #7563ff;
+}
+/* CARD */
+.modern-newsletter {
+    background: linear-gradient(135deg, #f8f9ff, #ffffff);
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.modern-newsletter:hover {
+    transform: translateY(-5px);
+}
+
+/* ICON */
+.newsletter-icon {
+    width: 60px;
+    height: 60px;
+    background: #7563ff;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+}
+
+/* TITLE */
+.newsletter-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.newsletter-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* FORM */
+.newsletter-form-new {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.newsletter-form-new input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.newsletter-form-new input:focus {
+    border-color: #7563ff;
+}
+
+/* BUTTON */
+.newsletter-form-new button {
+    background: #7563ff;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form-new button:hover {
+    background: #5a4be0;
+}
+
+/* PRIVACY */
+.privacy {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .newsletter-form-new {
+        flex-direction: column;
+    }
+
+    .newsletter-form-new button {
+        width: 100%;
+    }
+}
+
+/* DARK MODE */
+html[data-theme="dark"] .modern-newsletter {
+    background: #1a1a2e;
+    box-shadow: none;
+}
+
+html[data-theme="dark"] .newsletter-title {
+    color: #fff;
+}
+
+html[data-theme="dark"] .newsletter-desc {
+    color: #bbb;
+}
+
+html[data-theme="dark"] .newsletter-form-new input {
+    background: #0f0f1a;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+html[data-theme="dark"] .privacy {
+    color: #aaa;
+}
+/* NEWSLETTER (IMPROVED) */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.newsletter-form input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    flex: 1;
+    background: transparent;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background: #7563ff;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #5a4be0;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    margin-top: 30px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .footer-section {
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: row;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter-form {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        margin-top: 8px;
+        border-radius: 8px;
+    }
+}
+
+/* ================= DARK MODE ================= */
+
+html[data-theme="dark"] .footer-section {
+    background: #000;
+    color: #aaa;
+    border-top: 1px solid #222;
+}
+
+html[data-theme="dark"] .footer-title {
+    color: #fff;
+}
+
+html[data-theme="dark"] .footer-text {
+    color: #aaa;
+}
+
+html[data-theme="dark"] .footer-links a {
+    color: #aaa;
+}
+
+html[data-theme="dark"] .footer-links a:hover {
+    color: #7563ff;
+}
+
+html[data-theme="dark"] .footer-social a {
+    color: #aaa;
+}
+
+html[data-theme="dark"] .footer-social a:hover {
+    color: #7563ff;
+}
+
+html[data-theme="dark"] .newsletter-form {
+    background: #111;
+}
+
+html[data-theme="dark"] .newsletter-form input {
+    color: #fff;
+}
+
+html[data-theme="dark"] .footer-bottom {
+    border-top: 1px solid #222;
+    color: #888;
+}
+/* SECTION */
+.appointment-section {
+    padding: 80px 0;
+}
+
+/* LEFT */
+.appointment-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.appointment-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.appointment-points {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.appointment-points li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* CARD */
+.appointment-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* FORM */
+.appointment-card .form-control {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.appointment-card textarea {
+    height: 100px;
+}
+
+/* BUTTON */
+.btn-appoint {
+    width: 100%;
+    background: #7563ff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-appoint:hover {
+    background: #5a4be0;
+}
+
+/* DARK MODE */
+html[data-theme="dark"] .appointment-card {
+    background: #1a1a2e;
+}
+
+html[data-theme="dark"] .appointment-content h2 {
+    color: #fff;
+}
+
+html[data-theme="dark"] .appointment-content p {
+    color: #aaa;
+}
+
+html[data-theme="dark"] .appointment-card .form-control {
+    background: #0f0f1a;
+    border: 1px solid #333;
+    color: #fff;
+}
+/* SECTION */
+.testimonial-section {
+    padding: 80px 0;
+    
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* CARD */
+.testimonial-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* TEXT */
+.testimonial-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* USER */
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.user h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user span {
+    font-size: 13px;
+    color: #888;
+}
+
+/* DARK MODE */
+html[data-theme="dark"] .testimonial-section {
+    background: #000;
+}
+
+html[data-theme="dark"] .testimonial-card {
+    background: #1a1a2e;
+}
+
+html[data-theme="dark"] .testimonial-card p {
+    color: #ccc;
+}
+
+html[data-theme="dark"] .user h5 {
+    color: #fff;
+}
